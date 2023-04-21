@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 let schema = new mongoose.Schema({
-    nombre: {type:String, required: true},
+    name: {type:String, required: true},
     color: {type:String, required: true},
     hover: {type:String, required: true},
     description:{type:String, required: true},
@@ -13,6 +13,6 @@ let schema = new mongoose.Schema({
 })
 
 let collection = 'categorys'
-let Category = mongoose.model(schema, collection)
+let Category = mongoose.model( collection , schema)
 
 export default Category
